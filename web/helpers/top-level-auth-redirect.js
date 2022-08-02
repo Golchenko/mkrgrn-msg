@@ -1,4 +1,4 @@
-export default function topLevelAuthRedirect({ apiKey, hostName, shop }) {
+export default function topLevelAuthRedirect({ apiKey, hostName, shop, host }) {
   return `<!DOCTYPE html>
 <html>
   <head>
@@ -16,7 +16,7 @@ export default function topLevelAuthRedirect({ apiKey, hostName, shop }) {
 
           const app = createApp({
             apiKey: '${apiKey}',
-            host: '${hostName}',
+            host: '${host}',
           });
 
           const redirect = Redirect.create(app);
