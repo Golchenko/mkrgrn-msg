@@ -23,9 +23,6 @@ export default function HomePage() {
             </div>
           </Card>
         </Layout.Section>
-        <Layout.Section>
-          <ProductsCard />
-        </Layout.Section>
       </Layout>
     </Page>
   );
