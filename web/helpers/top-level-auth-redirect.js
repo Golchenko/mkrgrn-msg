@@ -16,7 +16,7 @@ export default function topLevelAuthRedirect({ apiKey, hostName, shop }) {
 
           const app = createApp({
             apiKey: '${apiKey}',
-            shopOrigin: '${shop}',
+            host: '${hostName}',
           });
 
           const redirect = Redirect.create(app);
